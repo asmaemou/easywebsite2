@@ -132,7 +132,7 @@ export default function Navbar() {
             </div>
           </div>
           {/* Add your rectangular shape here */}
-          <div className="bg-blue-500 h-2"></div>
+          
         </>
       )}
     </Disclosure>

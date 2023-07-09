@@ -1,14 +1,9 @@
 import { RiPhoneLine, RiMailLine, RiFacebookLine, RiInstagramLine } from 'react-icons/ri';
-import contactBackground from '../contactP.jpeg';
-
-
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="relative w-full h-1/3">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${contactBackground})` }}></div>
-      </div>
+      <>
       <div className="gap-20 grid grid-cols-3"  >
       <div>
         <div>
@@ -35,11 +30,10 @@ const Contact = () => {
         </div>
       </div>
       </div>
-      <div className="flex flex-col items-center justify-center py-8">
-      </div>
-    </div>
-    
+      <ContactForm>
+
+      </ContactForm>
+      </>
   );
 };
-
 export default Contact;
