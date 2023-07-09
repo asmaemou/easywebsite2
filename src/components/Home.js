@@ -21,7 +21,7 @@ const Home = () => {
         <div className="flex justify-center">
           <a
             href="https://web.facebook.com/easylarache/videos/3293695087585784"
-            className="text-blue-400"
+            className="text-green-600 underline"
           >
             Video Pub
           </a>

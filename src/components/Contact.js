@@ -1,21 +1,9 @@
 import { RiPhoneLine, RiMailLine, RiFacebookLine, RiInstagramLine } from 'react-icons/ri';
 import contactBackground from '../contactP.jpeg';
-import {useRef} from 'react';
-import emailjs from '@emailjs/browser';
+
+
 
 const Contact = () => {
-  const form = useRef()
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_3i7q051', 'template_s5qnzva', form.current, 'zEuqMoOfq9qnSVakE')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset( )
-  };
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="relative w-full h-1/3">
@@ -48,11 +36,9 @@ const Contact = () => {
       </div>
       </div>
       <div className="flex flex-col items-center justify-center py-8">
-        
-        
-        
       </div>
     </div>
+    
   );
 };
 
