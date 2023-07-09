@@ -3,14 +3,14 @@ import welcomeImage from "../welcome.jpeg";
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="relative w-full h-1/2">
+      {/* <div className="relative w-full h-1/2"> */}
         <img
           className="w-full h-full object-cover"
           src={welcomeImage}
           alt="Welcome Image"
         />
-        <div className="absolute inset-0 bg-gray-900 opacity-10"></div>
-      </div>
+        {/* <div className="absolute inset-0 bg-gray-900 opacity-10"></div> */}
+      {/* </div> */}
       <div className="bg-gray-200 p-4 md:p-8 rounded-lg mt-8 w-3/4">
         <h1 className="text-3xl font- bold text-center mb-4">
           Welcome to Easy Service
