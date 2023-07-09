@@ -1,7 +1,21 @@
 import { RiPhoneLine, RiMailLine, RiFacebookLine, RiInstagramLine } from 'react-icons/ri';
 import contactBackground from '../contactP.jpeg';
+import {useRef} from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_3i7q051', 'template_s5qnzva', form.current, 'zEuqMoOfq9qnSVakE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset( )
+  };
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="relative w-full h-1/3">
@@ -17,6 +31,7 @@ const Contact = () => {
           <RiMailLine className="w-6 h-6 mr-2" />
           <p>Email Address: easymaroc07@gmail.com</p>
         </div>
+        <a href="https://web.facebook.com/easylarache/videos/3293695087585784" className="text-blue-400">Video Pub</a>
         <div className="flex">
           <a href="https://www.facebook.com/easylarache" target="_blank" rel="noopener noreferrer" className="mr-2">
             <RiFacebookLine className="w-6 h-6" />
