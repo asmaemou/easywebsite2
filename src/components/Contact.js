@@ -31,7 +31,6 @@ const Contact = () => {
           <RiMailLine className="w-6 h-6 mr-2" />
           <p>Email Address: easymaroc07@gmail.com</p>
         </div>
-        <a href="https://web.facebook.com/easylarache/videos/3293695087585784" className="text-blue-400">Video Pub</a>
         <div className="flex">
           <a href="https://www.facebook.com/easylarache" target="_blank" rel="noopener noreferrer" className="mr-2">
             <RiFacebookLine className="w-6 h-6" />
