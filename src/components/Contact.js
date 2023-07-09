@@ -18,9 +18,8 @@ const Contact = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="relative w-full h-1/3">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${contactBackground})` }}></div>
-      </div>
+      <img className="w-full h-full object-cover" src={contactBackground} alt="Welcome Image" />
+      
       <div className="flex flex-col items-center justify-center py-8">
         <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
         <div className="flex items-center mb-4">
