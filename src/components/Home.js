@@ -24,6 +24,7 @@ const Home = () => {
           <a
             href="https://web.facebook.com/easylarache/videos/3293695087585784"
             className="text-green-600 underline"
+            target="_blank" rel="noreferrer"
           >
             Video Pub
           </a>
