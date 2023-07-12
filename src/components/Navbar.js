@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-green-800 static">
+    <Disclosure as="nav" className="bg-[#079e7c] static">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export default function Navbar() {
                         key={item.name}
                         to={item.to}
                         className={({ isActive, isPending }) =>(
-                          classNames(isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          classNames(isActive ? 'bg-[#fec23f] text-white' : 'text-gray-300 hover:bg-[#ffdb91] hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium')
                         )}
                         aria-current={item.current ? 'page' : undefined}
