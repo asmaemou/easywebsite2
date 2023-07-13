@@ -7,8 +7,8 @@ const About = () => {
       We provide our services to two categories of customers, EASY partner shops and EASY consumer application users.
       </p>
       <div>
-        <p className="font-bold mb-2 text-center mt-7 mb-11 text-2xl">Two categories:</p>
-        <div className="flex gap-20 mt-4 w-10/12 mx-auto">
+        <p className="font-bold mb-2 text-center mt-7 mb-17 text-2xl">Two categories:</p>
+        <div className="flex gap-20 mt-8 w-10/12 mx-auto">
         <div className="bg-[#fec23f] p-6 rounded-lg hover:-translate-y-5 hover:-translate-x-2 duration-300">
         <p className="text-lg">
         EASY Service is a channel of bringing new customers to shops aimed at introducing the store to EASY customers to increase sales and raise the number of transactions.

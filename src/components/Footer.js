@@ -10,7 +10,11 @@ const Footer = () => {
       >
         <span>© 2020 Appy. All rights reserved.</span>
         <span>Terms · Privacy Policy</span>
+        <div className="flex flex-row justify-between ">
         <SocialIcon url="https://web.facebook.com/easylarache/videos/3293695087585784" bgColor='#079e7c' />
+        <SocialIcon url="https://www.instagram.com/easy.maroc/?igshid=MzRlODBiNWFlZA%3D%3D" bgColor='#079e7c' />
+        </div>
+        
       </div>
     </footer>
   );
