@@ -3,6 +3,8 @@ import { Disclosure} from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import logo from '../logoeasy.jpeg';
 import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import ChangeLanguage from './ChangeLanguage';
 
 const navigation = [
   { name: 'Home', to: '/', current: true },
@@ -16,6 +18,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const {t} = useTranslation() 
   return (
     <Disclosure as="nav" className="bg-[#079e7c] static">
       {({ open }) => (
@@ -57,11 +60,15 @@ export default function Navbar() {
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
-                        {item.name}
+                        {t(`${item.name}`)}
+                        {/* {t("Services")} */}
                         </NavLink>
                     ))}
                   </div>
                 </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+               <ChangeLanguage/>
               </div>
             </div>
           </div>
