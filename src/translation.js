@@ -10,6 +10,7 @@ const resources = {
       About: "About",
       Services: "Services",
       Contact: "Contact",
+      
     },
   },
   ar: {

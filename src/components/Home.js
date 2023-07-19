@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import welcomeImage from "../welcome.jpeg";
 import {useTranslation} from 'react-i18next'
-import ChangeLanguage from './ChangeLanguage';
+// import ChangeLanguage from './ChangeLanguage';
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
         <img
           className="max-h-96 w-full object-cover"
           src={welcomeImage}
-          alt="Welcome Image"
+          alt="Welcome"
         />
         {/* <div className="absolute inset-0 bg-gray-900 opacity-10"></div> */}
       </div>
@@ -21,7 +21,7 @@ const Home = () => {
           {t("welcome")}
         </h1>
         <p className="text-center">
-          We form the largest decentralized market for discounts in the region.
+          {t("intro")}
         </p>
         <div className="flex justify-center">
           <a
