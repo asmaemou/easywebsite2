@@ -8,13 +8,13 @@ const Contact = () => {
       <div>
         <div className="flex flex-row gap-4 items-center">
           <RiPhoneLine w-6 h-6 mr-2 />
-          <p>+212 668-543004</p>
+          <p>+212 668661680</p>
         </div>
       </div>
       <div>
       <div className="flex flex-row gap-4 items-center">
           <RiMailLine className="w-6 h-6 mr-2" />
-          <p>easymaroc07@gmail.com</p>
+          <p>amouradi2002@gmail.com</p>
         </div>
       </div>
       <div>

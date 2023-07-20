@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
-// npm i @emailjs/browser
+
 
 const Contact = () => {
   const form = useRef();
@@ -12,14 +12,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "replace with service id",
-        "replace with template id",
+        "service_3i7q051",
+        "template_kiwtrnb",
         form.current,
         "replace with user id"
       )
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
           console.log("message sent");
         },
         (error) => {
