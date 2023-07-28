@@ -1,4 +1,22 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+
+
 export default function ContactForm() {
+const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault();
+  //change the service id this one:service_3i7q051
+    emailjs.sendForm('service_3i7q051', 'template_kiwtrnb', form.current, 'zEuqMoOfq9qnSVakE')
+    .then((result) => {
+        // show the user a success message
+        console.log('success', result)
+    }, (error) => {
+        // show the user an error
+        console.log('failed')
+    });
+  };
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
@@ -9,7 +27,7 @@ export default function ContactForm() {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Talk to Easy</h2>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20" ref={form} onSubmit={sendEmail} >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
