@@ -8,12 +8,13 @@ const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
   //change the service id this one:service_3i7q051
-    emailjs.sendForm('service_3i7q051', 'template_kiwtrnb', form.current, 'zEuqMoOfq9qnSVakE')
+    emailjs.sendForm('service_goqx46q', 'template_kiwtrnb', form.current, 'zEuqMoOfq9qnSVakE')
     .then((result) => {
         // show the user a success message
         console.log('success', result)
     }, (error) => {
         // show the user an error
+        console.log(error)
         console.log('failed')
     });
   };
@@ -30,14 +31,14 @@ const form = useRef()
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20" ref={form} onSubmit={sendEmail} >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="from_name" className="block text-sm font-semibold leading-6 text-gray-900">
               First name
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
-                id="first-name"
+                name="from_name"
+                id="from_name"
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-500  focus:outline-none sm:text-sm sm:leading-6"
               />
@@ -50,7 +51,7 @@ const form = useRef()
             <div className="mt-2.5">
               <input
                 type="text"
-                name="last-name"
+                name="last_name"
                 id="last-name"
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-500  focus:outline-none sm:text-sm sm:leading-6"
@@ -64,7 +65,7 @@ const form = useRef()
             <div className="mt-2.5">
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 id="email"
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-500  focus:outline-none sm:text-sm sm:leading-6"
@@ -78,7 +79,7 @@ const form = useRef()
             <div className="relative mt-2.5">
               <input
                 type="tel"
-                name="phone-number"
+                name="phone_number"
                 id="phone-number"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-500  focus:outline-none sm:text-sm sm:leading-6"
